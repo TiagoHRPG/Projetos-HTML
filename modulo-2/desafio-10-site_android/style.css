@@ -1,0 +1,233 @@
+@charset "UTF-8";
+@font-face{
+    font-family: 'Android';
+    src: url(pacote-projeto-d010/fontes/idroid.otf)
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url(pacote-projeto-d010/fontes/BebasNeue-Regular.otf);
+}
+
+:root{
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: 'Bebas Neue', cursive;
+    --fonte2: 'Android', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body{
+    background-color: var(--cor1);
+    
+}
+
+header{
+    text-align: center;
+    background-image: linear-gradient(to bottom, var(--cor2),  var(--cor4));
+    padding-bottom: 30px;
+}
+
+header > h1 {
+    font-family: var(--fonte1);
+    font-weight: normal;
+    color: white;
+    padding: 25px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.562);
+}
+header > p{
+    color: rgb(211, 211, 211);
+    max-width: 400px;
+    margin: auto;
+    font-family: var(--fonte0);
+    font-size: 0.9em;
+}
+
+nav{
+   background-color: var(--cor4); 
+   padding-bottom: 10px;
+   padding-top: 10px;
+   box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.493);
+}
+
+nav > a{
+    font-weight: bold;
+    font-family: var(--fonte0);
+    font-size: 0.9em;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+
+    border-radius: 5px;
+
+    transition-duration: 0.5s;
+}
+
+nav > a:hover{
+
+    color: var(--cor4);
+    background-color: var(--cor2);
+}
+
+main{
+    min-width: 400px;
+    max-width: 800px;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 15px;
+    font-family: var(--fonte0);
+    line-height: 1.5em;
+    text-align: center;
+    text-indent: 25px;
+    font-size: 0.95em;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
+    
+}
+
+strong{
+    font-weight: bold;
+    color: var(--cor4);
+
+}
+p > a::after{
+    content: "🔗";
+}
+main a:hover{
+    text-decoration: underline;
+    background-color: var(--cor3);
+}
+
+main  a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor4);
+    background-color: var(--cor0);
+}
+
+main > p{
+    text-align: justify;
+}
+
+main > h1{
+    font-family: var(--fonte2);
+    font-size: 1.5em;
+    color: var(--cor4);
+    padding: 0.5em 0em 0.5em 0em;
+    text-indent: 0em;
+
+}
+
+article > h2{
+    text-align: justify;
+    font-family: var(--fonte2);
+    font-size: 1.3em;
+    color: var(--cor4);
+    background-image: linear-gradient(45deg, var(--cor0), 80%, white);
+    text-indent: 0em;
+    margin: 0.5em 0em 0.5em 0em;
+}
+article > p{
+    text-align: justify;
+}
+
+picture > img{
+    width: 100%;
+    margin-left: 0.1em;
+}   
+
+div.video{
+    min-width: 370px;
+    max-width: 770px;
+    text-align: center;
+    background-color: var(--cor4);
+    position: relative;
+
+    padding-bottom: 58.5%;
+
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+
+aside{
+    border-radius: 10px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: var(--cor0);
+
+    box-shadow: 0 0 10px black;
+}
+
+aside > h3{
+    text-align: left;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: var(--cor3);
+}
+
+aside > p{
+    text-align: justify;
+    text-indent: 25px;
+    padding: 10px;
+}
+
+aside a{
+    text-decoration: none;
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+aside > div{
+    text-align: left;
+
+}
+
+
+aside ul{
+    list-style-type: none;
+    columns: 2;
+}
+
+aside li{
+    text-decoration: none;
+}
+
+aside ul > li::before{
+    content: "\2714\0020";
+    
+}
+footer{
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+    color: var(--cor0);
+    font-family: var(--fonte0);
+    background-color: var(--cor4);
+}
+
+footer a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+footer a:hover{
+    color: var(--cor3);
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-size: 18px;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgb(203, 255, 203);
+            margin: 0px;
+        }
+
+        h1{
+            font-size: 3em;
+            font-weight: bolder, bold;
+        }
+        header{
+            background-color: white;
+            margin: 10px;
+            margin-left: 30px;
+            margin-right: 30px;
+            border-radius: 10px;
+            align-items: center;
+            padding-top: 1px;
+
+            box-shadow: 2px 2px 8px rgba(26, 26, 26, 0.438);
+        }
+        header > h1{
+            text-align: center;
+        }
+        nav{
+            background-color: #808080;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            text-align: center;
+            padding-top: 7px;
+            padding-bottom: 7px;
+
+            
+
+        }
+        a#first{
+            border-left: 2px solid black;
+        }
+        nav > a{
+            text-decoration: none;
+            color: black;
+            border-right: 2px solid black;
+            text-align: center;
+            margin: -5px;
+            padding: 5px 50px 5px 50px;
+
+
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            color: #4b4b4b;
+            background-color: #a3a3a3;
+        }
+        section{
+            background-color: white;
+            margin: 10px;
+            margin-left: 30px;
+            margin-right: 30px;
+            border-radius: 10px;
+            align-items: center;
+            padding: 10px;
+
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.418);
+
+        }
+        article > h2{
+            text-align: right;
+        }
+        article > aside{
+            margin: 0px;
+            padding: 0px;
+            color:rgb(158, 158, 158);
+        }
+
+        article > p{
+            text-align: justify;
+            text-indent: 30px;
+        }
+        footer{
+            background-color: #838839;
+            margin: 0px;
+            padding: 15px;
+        }
+        footer > p{
+            text-align: center;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#" id="first">bla</a>
+            <a href="#">bla</a>
+            <a href="#">bla</a>
+            <a href="#">bla</a>
+            <a href="#">bla</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>Assunto 1 - ;-;</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem itaque debitis reiciendis excepturi sequi? Corrupti, repudiandae facilis. Dignissimos pariatur quasi temporibus hic natus, ipsum fugit asperiores voluptates unde, ab ad? Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem error consequatur numquam earum ipsam dignissimos, reiciendis quis blanditiis temporibus saepe eum quisquam velit et sequi animi culpa excepturi qui totam?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam dolores tempora perferendis ullam blanditiis, ex corporis reiciendis doloremque autem voluptate vero saepe, dignissimos repellat officiis aliquid porro quam error? Vero?</p>
+            </article>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Assunto 2 - EXTRA</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti aspernatur soluta nostrum id facere voluptates cum voluptas asperiores libero molestias veniam repellendus rem sunt corporis similique, a velit maxime esse.</p>
+                <aside>
+                    <p>Escrito por Tiaguinho - 04/02/2022</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Tiago Henrique</p>
+    </footer>
+</body>
+</html>

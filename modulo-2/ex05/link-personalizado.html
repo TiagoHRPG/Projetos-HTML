@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizar links</title>
+    <style>
+        body {
+            font-family: times, "Times New Roman" serif; 
+        }
+        a{
+            font-weight: bold;
+            text-decoration: none;
+            color: blue;
+            
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        a:visited{
+            color: red;
+        }
+        .especial::before{
+            content: ">>>";
+        }
+        .especial::after{
+            content: "<<<";
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+
+    <p>Para aprender HTML5, acesse o <a href="https://github.com/gustavoguanabara">Github de Tiago</a></p>
+    <p>Se quiser conhecer os padrões de site visite o <a href="https://www.w3c.br/">Escritório do W3C no Brasil</a></p>
+    <p>Para acompanhar o Youtube acesso o <a href="https://www.youtube.com/watch?v=WPtRX4n0UJs&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=21&ab_channel=CursoemV%C3%ADdeo" class="especial">canal do Curso em Vídeo</a></p>
+</body>
+</html>

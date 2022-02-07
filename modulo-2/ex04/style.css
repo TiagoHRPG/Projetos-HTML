@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+body{
+    background-color: #72B6ED;
+    font: normal 1em Arial, Helvetica, sans-serif;
+
+}
+ .main-title{
+    background-color: #35546E;
+    color: white;
+    text-align: center;
+}
+
+h1{
+    color: #35546E;
+}
+
+h2{
+    color:  #5385AD
+}
